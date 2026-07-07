@@ -17,6 +17,12 @@ async function getData(): Promise<profileData> {
     cache: "no-store",
   });
 
+  console.log("status", res.status);
+
+  if (!res.ok) {
+    throw new Error(`Fetch failed: ${res.status}`);
+  }
+
   return res.json();
 }
 
