@@ -25,6 +25,10 @@ async function getData(): Promise<profileData> {
 
   console.log(res.headers.get("content-type"));
 
+  console.log(res.status);
+  console.log(res.url);
+  console.log(res.headers.get("content-type"));
+
   return res.json();
 }
 
