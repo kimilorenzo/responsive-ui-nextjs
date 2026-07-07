@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 async function getData(): Promise<profileData> {
-  const res = await fetch("https://responsive-ui-nextjs-964jsl1cd-kimilorenzos-projects.vercel.app/api/data", {
+  const res = await fetch("https://responsive-ui-nextjs-gtd7y8nh5-kimilorenzos-projects.vercel.app/api/data", {
     cache: "no-store",
   });
 
