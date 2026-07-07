@@ -23,6 +23,8 @@ async function getData(): Promise<profileData> {
     throw new Error(`Fetch failed: ${res.status}`);
   }
 
+  console.log(res.headers.get("content-type"));
+
   return res.json();
 }
 
