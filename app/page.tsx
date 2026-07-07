@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 async function getData(): Promise<profileData> {
-  const res = await fetch("http://localhost:3000/api/data", {
+  const res = await fetch("/api/data", {
     cache: "no-store",
   });
 
