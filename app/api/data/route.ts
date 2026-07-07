@@ -1,7 +1,7 @@
 export async function GET() {
   return Response.json({
     data: {
-      name: "orang bodoh",
+      name: "Kimi Lorenzo",
       description: "Web developer",
     },
   });
